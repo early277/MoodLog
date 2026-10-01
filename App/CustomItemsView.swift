@@ -121,7 +121,7 @@ struct CustomItemEditor: View {
                 if let validation { Text(validation).font(.footnote).foregroundStyle(.red) }
                 Spacer(minLength: 0)
                 HStack {
-                    if page > 0 { Button("戻る") { editing = false; validation = nil; page -= 1 }.frame(height: 48) }
+                    if page > 0 { Button("戻る") { speech.stop(); editing = false; validation = nil; page -= 1 }.frame(height: 48) }
                     Spacer()
                     Button(page == 0 || (page == 1 && kind == .options) ? "次へ" : "追加する") {
                         editing = false

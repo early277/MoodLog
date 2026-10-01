@@ -94,7 +94,7 @@ struct RecordEditorView: View {
                 }
                 .onAppear { prepare() }
                 .onDisappear { speech.stop() }
-                .onChange(of: scenePhase) { _, phase in if phase != .active { speech.stop() } }
+                .onChange(of: scenePhase) { _, phase in if phase == .background || (phase == .inactive && speech.recording) { speech.stop() } }
                 .alert("お知らせ", isPresented: Binding(get: { error != nil || speech.error != nil }, set: { if !$0 { error = nil; speech.error = nil } })) {
                     Button("閉じる", role: .cancel) { error = nil; speech.error = nil }
                 } message: { Text(error ?? speech.error ?? "") }
