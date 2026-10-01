@@ -1,0 +1,11 @@
+.DS_Store
+build/
+*.xcuserstate
+xcuserdata/
+*.xcresult/
+
+# Local verification images and delivery notes
+Docs/QA*/
+Docs/VERIFICATION*.md
+Docs/RELEASE-AUDIT*.md
+Docs/PUBLICATION*.md
