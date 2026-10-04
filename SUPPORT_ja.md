@@ -1,6 +1,6 @@
 # 気分・気力ログ サポート
 
-開発者：early277
+開発者：Yusuke Yoshida
 
 対象：iPhone、iOS 17以降
 
