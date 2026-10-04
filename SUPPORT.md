@@ -4,21 +4,23 @@ Developer: early277
 
 Requirements: iPhone running iOS 17 or later
 
-The app's interface is in Japanese. The labels below include the text shown in the app.
+The interface supports Japanese, English, Simplified Chinese, Korean, Spanish, and Brazilian Portuguese, following the iOS app language. User-authored notes, custom questions, and choices are not automatically translated. The Japanese labels below identify the corresponding controls.
 
 ## Recording
 
-The recording screen opens when you launch the app. Select a choice to move to the next question. Back (戻る) returns to the previous question. First question (最初へ) returns to the beginning and keeps answers already entered. Tap Record (記録する) on the final screen to save.
+The recording screen opens when you launch the app. Select a choice to move to the next question. Back (戻る) returns to the previous question. First question (最初へ) returns to the beginning and keeps answers already entered. Tap Record (記録する) on the final screen to save. A successful save opens the latest Graph in Review.
 
-When a question can use a previous record, the next button shows the answer that will be used, for example “昨日・多め を使って次へ” (use yesterday / more, then continue). If you do not want to use that answer, clear it with the eraser button at the top.
+When a question can use a previous record, the next button shows the answer that will be used, for example “昨日・多め を使って次へ” (use yesterday / more, then continue). Use “未回答で次へ” (continue without an answer) to leave it blank. Previous answers are carried only when you tap the button showing that answer. Returning to a question keeps its selected answer available. Saving does not automatically fill unseen questions.
 
-Voice notes are optional. You can save without a note. You can switch the recognized text between Normal (通常) and Hiragana (ひらがな) display. Hiragana changes how text is displayed; it does not correct speech recognition errors.
+Version 0.1.19 and later has no in-app voice input. Earlier notes are preserved and can be viewed or edited through Review.
+
+For main sleep (excluding naps), confirm the bedtime and wake dates beside the clock. Reused clock values are confirmed for the current target dates; the original dates appear in the candidate. The bedtime-to-wake interval is not actual time asleep. Older records with unknown sleep dates remain unknown. Caffeine, alcohol, and tobacco periods use elapsed-hour ranges (a day is 24 hours); other recency questions use calendar days.
 
 ## Reviewing and editing
 
 Open Review (振り返り) at the top of the screen.
 
-- Graph (グラフ) shows mood, energy, and answers. Tap an answer cell to see details and Edit (修正).
+- Graph (グラフ) shows mood, energy, and answers. Tap an answer cell for details; hold it for 0.6 seconds to edit that item.
 - Compare (比較) lets you choose a question and see average mood and energy for each answer, with the number of recorded days.
 - Records (記録) shows individual records. Use the arrows to select a record and choose Edit (修正) to change it.
 
@@ -35,10 +37,6 @@ Charts and comparisons summarize your own records. The app does not determine ca
 - Export: use the share button at the top left of Review (振り返り) and choose a destination. Records are exported as JSON. The current app does not import JSON files.
 
 The app does not have a bulk-delete button for all records. iOS's Delete App action removes local app data from that device; Offload App preserves it. Manage exported files and existing backups separately.
-
-## If voice input is unavailable
-
-Check microphone and speech recognition permissions in iOS Settings. On devices without on-device recognition support, the app uses Apple's speech recognition service, so network availability can affect it. You can record using choices without voice input. To type in a saved note, choose Edit (修正), go to the note, and choose Edit text (文字を修正).
 
 ## Problems and contact
 
