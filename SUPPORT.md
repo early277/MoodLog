@@ -1,6 +1,6 @@
 # MoodLog Support
 
-Developer: early277
+Developer: Yusuke Yoshida
 
 Requirements: iPhone running iOS 17 or later
 
