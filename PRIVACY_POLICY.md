@@ -4,7 +4,7 @@ Last updated: October 2, 2026
 
 Developer: early277
 
-MoodLog (気分ログ) is an iPhone app for reviewing your mood, energy, and daily activities. The developer does not operate a server that receives your in-app records.
+MoodLog (気分・気力ログ) is an iPhone app for reviewing your mood, energy, and daily activities. The developer does not operate a server that receives your in-app records.
 
 ## Information stored by the app
 
