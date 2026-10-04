@@ -1,6 +1,6 @@
 # MoodLog Privacy Policy
 
-Last updated: October 1, 2026
+Last updated: October 2, 2026
 
 Developer: early277
 
@@ -14,15 +14,11 @@ Saved records are stored as JSON in the app's private storage on your device. Dr
 
 The app has no account registration, advertising, analytics SDKs, tracking, or collection of data from HealthKit.
 
-## Voice input
+## Notes and input
 
-Voice input is optional. The app requests microphone and speech recognition permission when you use it. You can record answers using choices without using voice input.
+Version 0.1.19 and later has no in-app voice input and requests no microphone or speech-recognition permission. Text entered in earlier versions, including notes, question names, and choices, is preserved and can be viewed or edited. Earlier versions did not save audio files either.
 
-Japanese transcription uses Apple's Speech framework. Recognition runs on the device when the device supports it. Otherwise, audio is sent to Apple's speech recognition service for processing. Apple's handling of information is governed by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
-
-The app does not save audio files. Recognized text is saved on your device as a note or custom-question input. Hiragana display is a conversion performed on your device; it does not remove the original text. The original transcription is retained even when its hiragana version is displayed.
-
-You can change voice-input permissions in iOS Settings. Revoking permission does not delete text already saved.
+Hiragana display is an on-device display conversion that retains the original text. Features and settings of the iOS keyboard used for text editing are managed by iOS.
 
 ## Exports and external links
 
